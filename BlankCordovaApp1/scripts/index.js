@@ -12,8 +12,40 @@
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener( 'resume', onResume.bind( this ), false );
         
+       // navigator.camera.getPicture();
+        document.getElementById('camera-click').addEventListener('click', testClick, false);
+        document.getElementById('list-click').addEventListener('click', listClick, false);
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
     };
+
+    function listClick() {
+
+        window.location = "ListDevices.html";
+    }
+
+    function testClick() {
+        //navigator.camera.getPicture(onCameraSuccess, onCameraFail);
+        cordova.plugins.barcodeScanner.scan(
+      function (result) {
+          window.location = "AddDetails.html?id=" + result.text;
+          /*alert("We got a barcode\n" +
+                "Result: " + result.text + "\n" +
+                "Format: " + result.format + "\n" +
+                "Cancelled: " + result.cancelled);*/
+      },
+      function (error) {
+          alert("Scanning failed: " + error);
+      }
+   );
+    }
+
+    function onCameraSuccess(){
+        alert('success');
+    }
+
+    function onCameraFail(){
+        alert('fail');
+    }
 
     function onPause() {
         // TODO: This application has been suspended. Save application state here.
