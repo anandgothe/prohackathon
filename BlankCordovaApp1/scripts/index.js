@@ -27,7 +27,8 @@
         //navigator.camera.getPicture(onCameraSuccess, onCameraFail);
         cordova.plugins.barcodeScanner.scan(
       function (result) {
-          window.location = "AddDetails.html?id=" + result.text;
+          debugger;
+          window.location = "detail.html?assetId=" + result.text;
           /*alert("We got a barcode\n" +
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +

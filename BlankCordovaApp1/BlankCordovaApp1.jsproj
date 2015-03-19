@@ -110,6 +110,9 @@
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="detail.html" />
+    <Content Include="scripts\detail.js" />
+    <Content Include="scripts\Users.js" />
     <Folder Include="images\" />
     <Content Include="AddDetails.html" />
     <Content Include="ListDevices.html" />
@@ -631,6 +634,7 @@
     <Content Include="plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
     <Content Include="plugins\org.apache.cordova.camera\www\ios\CameraPopoverHandle.js" />
     <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\Asset.js" />
     <Content Include="scripts\dataaccess.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\jquery-2.1.3.intellisense.js" />
@@ -638,6 +642,7 @@
     <Content Include="scripts\jquery-2.1.3.min.js" />
     <Content Include="scripts\jquery-2.1.3.min.map" />
     <Content Include="scripts\listDevices.js" />
+    <Content Include="scripts\OwnershipHistory.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />

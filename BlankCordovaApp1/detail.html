@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="jquery-mobile.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-------------- First page for form ----------->
+    <div data-role="page">
+        <!-------------- First page header ----------->
+        <div data-role="header">
+            <h1>Device Info</h1>
+        </div>
+        <!-------------- First page main content ----------->
+        <div data-role="main" class="ui-content">
+            <form method="post" action="#" data-ajax="false">
+                <label for="hardwareId">Id : <span>*</span></label>
+                <input type="text" name="hardwareId" id="hardwareId" placeholder="Hardware Id">
+                <label for="name">Name : <span>*</span></label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="type">Type: <span>*</span></label>
+                <input type="text" id="type" name="type" placeholder="Type" />
+                <label for="assignedTo">Assigned To</label>
+                <input type="text" name="assignedTo" id="assignedTo" placeholder="Assigned to" disabled>
+                <input type="button" data-inline="true" value="Change" data-theme="b">
+                <br />
+                <input type="submit" data-inline="true" value="Save" data-theme="b">
+                <input type="button" data-inline="true" value="View History" data-theme="b" id="view_history">
+            </form>
+        </div>
+        <!-------------------------------------------------------------
+        End of First page
+        -------------------------------------------------------------->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="scripts/Asset.js"></script>
+        <script src="scripts/detail.js"></script>
+</body>
+</html>
